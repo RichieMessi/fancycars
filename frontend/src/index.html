@@ -1,0 +1,59 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <title>Frontend</title>
+  <base href="/">
+
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="icon" type="image/x-icon" href="favicon.ico">
+  <!-- <meta http-equiv="Content-Security-Policy" content="default-src *; style-src 'self' http://* 'unsafe-inline'; script-src 'self' http://* 'unsafe-inline' 'unsafe-eval'" /> -->
+    <!-- Compiled and minified CSS -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/css/materialize.min.css">
+
+    <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+
+
+
+ 
+</head>
+<body>
+
+    <script
+    src="https://code.jquery.com/jquery-3.3.1.min.js"
+    integrity="sha256-FgpCb/KJQlLNfOu91ta32o/NMZxltwRo8QtmkMRdAu8="
+    crossorigin="anonymous"></script>
+  
+     <!-- Compiled and minified JavaScript -->
+     <script src="https://cdnjs.cloudflare.com/ajax/libs/materialize/0.100.2/js/materialize.min.js"></script>
+  
+     </script>
+  
+  
+     <script>
+        $(document).ready(() => {
+        $(".button-collapse").sideNav();
+        // $('.carousel.carousel-slider').carousel({fullWidth:true});
+        $('.modal').modal();
+  
+
+        // $('.carousel').carousel({});
+            $('.carousel.carousel-slider').carousel({fullWidth:true});
+        autoplay()   
+        function autoplay() {
+        $('.carousel').carousel('next');
+        setTimeout(autoplay, 4500);
+        }
+  
+       })
+     </script>
+
+
+  <app-root></app-root>
+
+
+
+
+
+</body>
+</html>

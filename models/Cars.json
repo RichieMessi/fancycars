@@ -1,0 +1,92 @@
+[
+  {
+    "id": "1",
+    "img": "myFancyCar_1.png",
+    "name": "Ferrari",
+    "make": "myMake_1",
+    "model": "myModel_1",
+    "year": "2009",
+    "availability": true
+  },
+  {
+    "id": "2",
+    "img": "myFancyCar_2.png",
+    "name": "Lamborghini",
+    "make": "myMake_2",
+    "model": "myModel_2",
+    "year": "2010",
+    "availability": false
+  },
+  {
+    "id": "3",
+    "img": "myFancyCar_3.png",
+    "name": "BMW",
+    "make": "myMake_3",
+    "model": "myModel_3",
+    "year": "2011",
+    "availability": true
+  },
+  {
+    "id": "4",
+    "img": "myFancyCar_4.png",
+    "name": "Tiny Truck",
+    "make": "myMake_4",
+    "model": "myModel_4",
+    "year": "2012",
+    "availability": false
+  },
+  {
+    "id": "5",
+    "img": "myFancyCar_5.png",
+    "name": "Ice Car",
+    "make": "myMake_5",
+    "model": "myModel_5",
+    "year": "2013",
+    "availability": true
+  },
+  {
+    "id": "6",
+    "img": "myFancyCar_6.png",
+    "name": "Fire Car",
+    "make": "myMake_6",
+    "model": "myModel_6",
+    "year": "2014",
+    "availability": false
+  },
+  {
+    "id": "7",
+    "img": "myFancyCar_7.png",
+    "name": "Wind Car",
+    "make": "myMake_7",
+    "model": "myModel_7",
+    "year": "2015",
+    "availability": true
+  },
+  {
+    "id": "8",
+    "img": "myFancyCar_8.png",
+    "name": "Bat Mobile",
+    "make": "myMake_8",
+    "model": "myModel_8",
+    "year": "2016",
+    "availability": false
+  },
+  {
+    "id": "9",
+    "img": "myFancyCar_9.png",
+    "name": "Need for Speed",
+    "make": "myMake_9",
+    "model": "myModel_9",
+    "year": "2017",
+    "availability": true
+  },
+  {
+    "id": "10",
+    "img": "myFancyCar_10.png",
+    "name": "Black Flames",
+    "make": "myMake_10",
+    "model": "myModel_10",
+    "year": "2018",
+    "availability": true
+  }
+]

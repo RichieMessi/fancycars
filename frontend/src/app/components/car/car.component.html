@@ -1,0 +1,92 @@
+
+
+  
+<div class="container">
+  <br><br>
+  <ul class="collapsible" data-collapsible="accordion">
+    <li>
+      <div class="collapsible-header"><i class="material-icons">arrow_downward</i><i class="material-icons">arrow_upward</i>Sort By</div>
+      <div class="collapsible-body"><span><a href="#" (click)="sortType('name')" [class.active]="sortBy === 'name'" class="chip ">Name</a></span></div>
+      <div class="collapsible-body"><span><a href="#" (click)="getAvailable()" [class.active]="getAvailable" class="chip ">Availability</a></span></div>
+    </li>
+  </ul>
+  <br><br><br>
+    <!-- Modal Structure -->
+    <div id="modal1" class="modal">
+      <div class="modal-content">
+        <h4>Congrats :)</h4>
+        <p>One step closer to your dream car</p>
+      </div>
+      <div class="modal-footer">
+        <a href="#!" class="modal-action modal-close waves-effect waves-green btn-flat">Good Luck!</a>
+      </div>
+    </div>
+    <!-- Bottom Pulse Button -->
+  <div class="fixed-action-btn vertical">
+    <a class="btn-floating btn-large #3949ab indigo darken-1 pulse">
+      <i class="large material-icons">mode_edit</i>
+    </a>
+    <ul>
+      <li><a class="btn-floating red"><i class="material-icons">insert_chart</i></a></li>
+      <li><a class="btn-floating yellow darken-1"><i class="material-icons">format_quote</i></a></li>
+      <li><a class="btn-floating green"><i class="material-icons">publish</i></a></li>
+      <li><a class="btn-floating blue"><i class="material-icons">attach_file</i></a></li>
+    </ul>
+  </div>
+<!-- ////////////////////////////////// -->
+<br><br><br>
+<div *ngFor="let car of cars">
+    <div *ngIf="car.availability == true">
+ <div class="col s12 m7 z-depth-5">
+    <div class="card horizontal waves-effect">
+      <div class=" card-image  ">
+        <img src="https://i.ytimg.com/vi/8jhCvyH3W3A/maxresdefault.jpg"
+        height="200px" width="250px">
+      </div>
+        <div class="card-stacked #00838f grey lighten-5">
+        <div class="card-content">
+          <ul class="collection">
+            <li class="collection-item">Name - {{car.name}}</li>
+            <li class="collection-item">ID - {{car.id}}</li>
+            <li class="collection-item">IMAGE URL - {{car.img}}</li>
+            <li class="collection-item">MAKE - {{car.make}}</li>
+            <li class="collection-item">MODEL - {{car.model}}</li>
+            <li class="collection-item">YEAR - {{car.year}}</li>
+          </ul>
+        </div>
+        <div class="card-action">
+          <!-- <button class="btn pulse #0091ea light-blue accent-4 z-depth-5 ">Buy</button> -->
+          <a class="waves-effect waves-light pulse #0091ea light-blue accent-4 z-depth-5  btn modal-trigger" href="#modal1">Buy</a>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>  
+
+<div *ngIf="car.availability == false">
+    <div class="col s12 m7 z-depth-5">
+       <div class="card horizontal waves-effect">
+         <div class=" card-image grey ">
+           <h3>Out Of Stock</h3>
+           <img src="https://i.ytimg.com/vi/8jhCvyH3W3A/maxresdefault.jpg"
+           height="200px" width="250px">
+         </div>
+         <div class="card-stacked #00838f grey lighten-5">
+           <div class="card-content">
+             <ul class="collection">
+            <li class="collection-item">Name - {{car.name}}</li>               
+               <li class="collection-item">ID - {{car.id}}</li>
+            <li class="collection-item">IMAGE URL - {{car.img}}</li>               
+               <li class="collection-item">MAKE - {{car.make}}</li>
+               <li class="collection-item">MODEL - {{car.model}}</li>
+               <li class="collection-item">YEAR - {{car.year}}</li>
+             </ul>
+           </div>
+         </div>
+       </div>
+     </div>
+   </div> 
+  <br><br><br>
+  <hr>
+</div>
+</div>
